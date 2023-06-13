@@ -122,7 +122,7 @@ def get_predictions(model, loader):
 loss_history, train_history, val_history = train_model(nn_model, train_loader, val_loader, loss, optimizer, 35)
 
 
-# Testing the model on a separate test set
+# Get prediction of errors in user's data
 def detect_error_flows():
     data_train2 = []
     arr2 = os.listdir('TestDataset')
